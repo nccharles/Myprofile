@@ -1,0 +1,28 @@
+{
+  "name": "Myprofile",
+  "displayName": "Myprofile",
+  "expo": {
+    "name": "Myprofile",
+    "description": "App from Limitless Academy",
+    "slug": "Myprofile",
+    "privacy": "public",
+    "sdkVersion": "25.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./App/Images/login1_mark.png",
+    "splash": {
+      "image": "./App/Images/login1_mark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
