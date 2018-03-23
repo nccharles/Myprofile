@@ -19,6 +19,7 @@ import PropTypes from 'prop-types'
 
 import Posts from './Posts'
 import FriendList from '../../Components/FriendList'
+import FriendPosts from '../../Components/FriendPosts'
 const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
@@ -134,7 +135,7 @@ class Profile2 extends Component {
     tabs: {
       index: 0,
       routes: [
-        { key: '1', title: 'active', count: 31 },
+        { key: '1', title: 'Posts', count: 20 },
         { key: '2', title: 'following', count: 95 },
         { key: '3', title: 'followers', count: 120 },
       ],
@@ -170,7 +171,7 @@ class Profile2 extends Component {
     const { posts } = this.props
     switch (key) {
       case '1':
-        return <FriendList/>
+        return <FriendPosts/>
       case '2':
         return <FriendList/>
       case '3':

@@ -21,6 +21,7 @@ import { image } from '../../utils'
 import profileStyles from './ProfileStyle'
 import Posts from './Posts'
 import FriendList from '../../Components/FriendList'
+import FriendPicture from '../../Components/FriendPicture'
 const styles = StyleSheet.create({ ...profileStyles })
 
 class Profile3 extends Component {
@@ -165,20 +166,7 @@ class Profile3 extends Component {
 
   renderMansonry2Col = () => {
     return (
-      <View style={styles.mansonryContainer}>
-        <View>
-          <Posts
-            containerStyle={styles.sceneContainer}
-            posts={this.state.postsMasonry.leftCol}
-          />
-        </View>
-        <View>
-          <Posts
-            containerStyle={styles.sceneContainer}
-            posts={this.state.postsMasonry.rightCol}
-          />
-        </View>
-      </View>
+      <FriendPicture/>
     )
   }
   renderFollow = () => {
